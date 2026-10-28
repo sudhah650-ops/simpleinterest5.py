@@ -1,8 +1,8 @@
 def calculate_simple_interest():
     try:
-        principal = float(input("Enter the principal amount: "))
-        rate = float(input("Enter the annual interest rate (in %): "))
-        time = float(input("Enter the time period (in years): "))
+        principal = float(sys.argv[1])
+        rate = float(sys.argv[2])
+        time = float(sys.argv[3])
         
         interest = (principal * rate * time) / 100
         
